@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="255.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="songdownloader.SongDownloaderGUIController">
+    <children>
+        <Button fx:id="downloadButton" layoutX="301.0" layoutY="108.0" onAction="#handleDownloadButton" text="Download Songs" />
+      <TextArea fx:id="linksToFetchTA" layoutX="26.0" layoutY="67.0" prefHeight="143.0" prefWidth="261.0" promptText="Enter a list of youtube links, one for each line" />
+      <Label fx:id="downloadStatusL" layoutX="26.0" layoutY="224.0" prefHeight="17.0" prefWidth="369.0" text="Downloading status: None." />
+      <Label fx:id="directoryToSave" layoutX="26.0" layoutY="14.0" prefHeight="37.0" prefWidth="228.0" text="Select a folder to download the files" />
+      <Button fx:id="selectDirectoryButton" layoutX="253.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleSelectDirectoryButton" text="Examine" />
+    </children>
+</AnchorPane>
